@@ -1,0 +1,16 @@
+<h1>User {{vm.user.login}}</h1>
+<br>
+
+<div class="row">
+	<div class="col-md-1">Username:</div>
+	<div class="col-md-2">{{vm.user.login}}</div>
+	<div class="col-md-3"><img ng-src="{{vm.user.avatar_url}}" width="100px" class="img-rounded"/> </div>
+	<div class="col-md-4" >
+		<collapsible title="Repos" class="bg-info">
+			<ul>
+				<li ng-repeat="repo in vm.user.repos">{{repo.name}}</li>	
+			</ul>
+		</collapsible>
+	</div>
+</div>
+

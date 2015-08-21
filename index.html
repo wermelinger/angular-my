@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<!-- Style sheets -->
+   		<link href="styles/bootstrap.css" rel="stylesheet" />
+		    <base href="/">
+	</head>
+		
+	<body ng-app="gitViewer">
+		<nav>
+			<div class="navbar navbar-default"> 
+				<div class="navbar-brand">Git Viewer</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+        	<ng-view></ng-view>
+	    </div>
+			
+		<!-- Library Scripts -->
+		<script src="scripts/angular.js"></script>
+		<script src="scripts/angular-resource.js"></script>
+		<script src="scripts/angular-mocks.js"></script>
+		<script src="scripts/angular-route.js"></script>	
+		
+		<!-- bower components -->
+		<script src="/bower_components/angular-tooltip/dist/tooltip.js"></script>	
+		
+		<!-- Application -->
+		<script src="app/app.js" ></script>
+		
+		<!-- Domain Classes -->
+    	<script src="app/domain/User.js" ></script>
+		<script src="app/domain/Repo.js" ></script>
+		
+		<!-- Services -->
+		<script src="app/common/myCommon.js" ></script>
+    	<script src="app/common/dataAccessService.js" ></script>
+
+		<!-- Controllers -->
+		<script src="app/search/UserSearchCtrl.js" ></script>
+		<script src="app/user/UserDetailCtrl.js" ></script>	
+		
+		<!-- Directives -->
+		<script src="app/directives/collapsible.js" ></script>		
+	</body>
+</html>
